@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         provider.addLocationSource(LocationManager.NETWORK_PROVIDER);
         myLocationNewOverlay = new MyLocationNewOverlay(provider, mapView);
         myLocationNewOverlay.enableMyLocation();
+        myLocationNewOverlay.setOptionsMenuEnabled(true);
 
         compassOverlay = new CompassOverlay(this, new InternalCompassOrientationProvider(this),mapView);
         compassOverlay.enableCompass();
