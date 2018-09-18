@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 //        mapView.getOverlays().add(myLocationNewOverlay);
 
         mapController = mapView.getController();
-        mapController.setZoom(12.0);
+        mapController.setZoom(15.0);
         mapController.setCenter(new GeoPoint(48.480309, 135.072003));
 
         myLocationNewOverlay.setDrawAccuracyEnabled(true);
